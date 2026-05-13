@@ -5,6 +5,10 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/ /*Although it felt correct, this was locking the header and footer to a limited width*/
+  justify-content: space-between;
 }
 
 img {
@@ -16,6 +20,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
 }
 
 input {
@@ -23,4 +28,53 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+ul{
+  list-style-type: none;
+  display: flex;
+  /*flex: 1;*/ /*Solution didn't have this*/
+  gap: 16px; /*Gap between links*/
+  /*The below two were something I missed. I couldn't see any reason why the left links had such a huge margin, or why both header and footer such large padding. They are default ul values.*/
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color: grey;
+  text-decoration: none;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.content{
+  flex: 1; /*It's in the solution but doesn't seem to have an affect*/
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer{
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.left-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.right-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
 }

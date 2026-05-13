@@ -23,6 +23,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 15px;
+  gap: 15px;
 }
 
 .icon {
@@ -37,7 +38,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-shrink: 0; /*Prevents the icon from being "smashed".*/
-  margin-right: 15px;
 }
 
 .container{

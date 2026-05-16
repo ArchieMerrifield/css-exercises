@@ -11,7 +11,7 @@ body {
   background: darkmagenta;
   color: white;
   align-content: center;
-  padding-left: 16px;
+  padding: 0 16px;
   font-size: 32px;
   font-weight: 900;
 }
